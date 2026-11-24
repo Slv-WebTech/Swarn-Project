@@ -1,2 +1,12 @@
 
 /** ADD YOUR AWESOME CODES HERE **/
+/* The hero slider script resized every slide image after it loaded, which moved the whole hero
+   (layout shift 0.52 on mobile). Size the images in CSS so the script has nothing left to move. */
+#slides .slides-container img {
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover;
+	margin: 0 !important;
+	left: 0 !important;
+	top: 0 !important;
+}
